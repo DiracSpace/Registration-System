@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="basededatosDataSet" targetNamespace="http://tempuri.org/basededatosDataSet.xsd" xmlns:mstns="http://tempuri.org/basededatosDataSet.xsd" xmlns="http://tempuri.org/basededatosDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="basededatosConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="basededatosConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Registration.Properties.Settings.GlobalReference.Default.basededatosConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="infoclientesTableAdapter" GeneratorDataComponentClassName="infoclientesTableAdapter" Name="infoclientes" UserDataComponentName="infoclientesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="basededatosConnectionString (Settings)" DbObjectName="basededatos.infoclientes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idcliente`, `nomcliente`, `primerA`, `segundoA`, `edad` FROM `infoclientes`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="basededatosDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="basededatosDataSet" msprop:Generator_UserDSName="basededatosDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="infoclientes" msprop:Generator_TableClassName="infoclientesDataTable" msprop:Generator_TableVarName="tableinfoclientes" msprop:Generator_TablePropName="infoclientes" msprop:Generator_RowDeletingName="infoclientesRowDeleting" msprop:Generator_RowChangingName="infoclientesRowChanging" msprop:Generator_RowEvHandlerName="infoclientesRowChangeEventHandler" msprop:Generator_RowDeletedName="infoclientesRowDeleted" msprop:Generator_UserTableName="infoclientes" msprop:Generator_RowChangedName="infoclientesRowChanged" msprop:Generator_RowEvArgName="infoclientesRowChangeEvent" msprop:Generator_RowClassName="infoclientesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
