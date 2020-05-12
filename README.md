@@ -7,3 +7,5 @@ C# system with multiple operations
 - Add/Edit/Delete images with user in local project files
 - Create database backup 
 - Encrypt/Decrypt Database backup
+
+It was my first try with C#
